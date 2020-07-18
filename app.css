@@ -1,0 +1,165 @@
+
+body {
+	font-family: Consolas;
+	background-color: #F8F8F8;
+	margin:0;
+}
+
+.page {
+	padding-left: 30px;
+}
+
+.navbar {
+	color: white;
+	background-color: #494544;
+	height: 100%;
+	width:300px;
+	z-index: 2;
+	top:0;
+	left:0;
+	position: fixed;
+	transition: 0.5s;
+	padding: 20px 0 0 0;
+}
+
+.content {
+	margin-left: 300px;
+	transition: margin-left .5s;
+}
+
+.menuToggler {
+	font-size: 32px;
+	color:white;
+	margin-left: 20px;
+	margin-right: auto;
+  transition: .5s;
+}
+
+line {
+	background-color: #F1861B;
+	height: 40px;
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.topLine {
+	margin: 0;
+	height: 39px;
+}
+
+.short-container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+#short-info {
+	display: block;
+	font-size: 22px;
+	vertical-align: middle;
+	padding-right: 10px;
+	font-family: Consolas;
+}
+
+.info-line {
+	font-size: 28px;
+	margin-left: 35%;
+	font-family: Consolas;
+	text-overflow: ellipsis;
+	position: relative;
+	width: 65%;
+}
+
+.info-line > p{
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}
+
+leftArrow {
+	width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:30px solid #F1861B; 
+  display: inline-block;
+  position: absolute;
+  transform: translate(-100%,0%);
+}
+
+rightLine {
+height: 40px;
+  width: 5px;
+  top:0;
+  right: 0;
+  display: inline-block;
+  position: absolute;
+  transform: translate(100%,0%);
+  background-color: #F1861B; 
+  border-bottom-right-radius: 10px;
+}
+
+h1 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 30px;
+}
+.navbar > ul {
+	font-size: 18px;
+}
+.navbar > ul > li {
+	margin-top: 10px;
+	list-style-type: none;
+	display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.navbar > ul > li > span {
+	margin-right: 10px;
+}
+
+.navbar > ul > li > p {
+	margin:0;
+}
+
+.navBar-full {
+	display: block;
+}
+
+.icon-vk {
+	width: 25px;
+	height: 25px;
+	fill: white;
+	background-image: url(myIcons/vk.svg);
+	background-size: contain;
+}
+
+.icon-gh {
+	width: 25px;
+	height: 25px;
+	fill: white;
+	background-image: url(myIcons/github.svg);
+	background-size: contain;
+}
+#stars {
+	color: #F1861B; 
+	position: absolute;
+	left:60%;
+	font-size: 15px;
+}
+
+.skill {
+	font-size: 19px;
+	float:left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-height: 22px;
+}
+
+a.navBar-full{
+	color:white;
+	text-decoration: none;
+}
