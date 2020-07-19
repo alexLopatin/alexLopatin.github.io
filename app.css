@@ -3,21 +3,25 @@ body {
 	font-family: Consolas;
 	background-color: #F8F8F8;
 	margin:0;
+	position:relative;
 }
 
 .page {
 	padding-left: 30px;
+	max-width: 100%;
+	padding-bottom: 200px;
 }
 
 .navbar {
 	color: white;
 	background-color: #494544;
-	height: 100%;
+	min-height: 100vh;
+	min-height: 100%;
 	width:300px;
 	z-index: 2;
 	top:0;
 	left:0;
-	position: fixed;
+	position: absolute;
 	transition: 0.5s;
 	padding: 20px 0 0 0;
 }
@@ -25,6 +29,7 @@ body {
 .content {
 	margin-left: 300px;
 	transition: margin-left .5s;
+	max-width: 100%;
 }
 
 .menuToggler {
@@ -53,7 +58,7 @@ line {
 	display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 #short-info {
@@ -105,7 +110,7 @@ h1 {
 	font-size: 50px;
 }
 h2 {
-	font-size: 30px;
+	font-size: 26px;
 }
 .navbar > ul {
 	font-size: 18px;
@@ -162,4 +167,33 @@ h2 {
 a.navBar-full{
 	color:white;
 	text-decoration: none;
+}
+
+.toOther > a {
+	color:white;
+	background-color: #F1861B;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 6px 11px 6px 11px;
+	border-radius: 20px;
+	font-weight: bolder;
+	margin-left: 5px;
+	margin-bottom: 70px;
+	margin-top: 10px;
+	line-height: 50px;
+}
+
+.toOther {
+	text-align: center;
+}
+
+.current {
+	color: #494544 !important;
+	background-color: white !important;
+}
+
+.page > p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	max-width: 800px;
 }
